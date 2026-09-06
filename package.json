@@ -1,0 +1,34 @@
+{
+  "name": "feedback-collector",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/server.js",
+    "server:dev": "node --watch server/server.js",
+    "dev:all": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run server:dev\" \"npm run dev\"",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "lucide-react": "^1.39.0",
+    "mongoose": "^9.9.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "concurrently": "^9.1.2",
+    "oxlint": "^1.79.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.2.2"
+  }
+}
